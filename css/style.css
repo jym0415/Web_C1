@@ -1,0 +1,130 @@
+*{padding: 0;margin: 0; font-family: '맑은고딕',sans-serif;}
+li,ul{list-style: none;}
+a{text-decoration: none;color: #333;} 
+/*공통*/
+.m-auto{margin:0 auto;}
+.container{width: 1000px;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.fix{position: fixed;}
+.d-flex{display: flex;}
+.d-none{display: none;}
+.d-block{display: block;}
+.align-center{align-items: center;}
+.justify-between{justify-content: space-between;}
+.w-100{width: 100%;}
+.ofh{overflow: hidden;}
+
+.h100{height: 100px;}
+.h200{height: 200px;}
+.h300{height: 300px;}
+.h350{height: 350px;}
+
+/*header*/
+.right{width: 800px;}
+#hd{width: 200px; height:650px ;
+    background-color: rgb(180, 179, 179);}
+h1{line-height: 3;}
+.d1a{
+    line-height: 3;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: whitesmoke;
+
+}
+.d2ul{
+    height: 0;
+    line-height: 2;
+    text-align: center;
+    font-size: 16px;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(24, 10, 104);
+}
+.d2ul a{color: white;}
+.d1li:hover .d2ul{
+    height: 120px;
+}
+.d1li:hover .d1a{color: rgb(82, 80, 80);}
+.d2ul li:hover {background: white;}
+.d2ul li:hover a {color:rgb(94, 48, 167) ;}
+
+/*slider*/
+#slider li{
+    left: 0; 
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+#slider li.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*content*/
+#content > div {width: 33.333%;}
+.tab h3{padding: 0 10px;
+        line-height: 3;
+        cursor: pointer;}
+.tab h3:hover {
+    background-color: rgb(180, 179, 179);
+}
+.tab ul{
+    display: none;
+    left: 0;
+    padding: 10px;}
+#notice li a{
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#notice li{
+    display: flex;
+    font-size: 16px;
+    line-height: 2;
+    justify-content: space-between;
+}
+.dis-fc{flex-direction: column;}
+#gallery ul{
+    justify-content: space-between;
+
+}
+#gallery img{width: 90%; margin-top: 10px;
+}
+
+.tab >div.on ul{display: flex;}
+
+.banner img {width: 100%; height: 200px;}
+.link img {width: 100%; height: 200px;}
+
+/*footer*/
+#ft{background-color: lightgrey;}
+.ftlogo{width: 30%;}
+.ftright{width: 70%;
+        line-height: 2;}
+.ftright p {text-align: center;}
+
+/*popup*/
+.popup{
+    line-height: 2;
+    text-align: ceter;
+    padding: 10px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+.popup button{padding: 0 10px;
+                float: right;}
+.wrap{width: 1000px;}
+
+
